@@ -9,6 +9,7 @@ export default class App extends React.Component {
         pan     : new Animated.ValueXY()   //Step 1
     };
 
+
     this.panResponder = PanResponder.create({    
         onStartShouldSetPanResponder : () => true,
         onPanResponderMove           : Animated.event([null,{ 
